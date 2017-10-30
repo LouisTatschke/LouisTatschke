@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Louis Tatschke Website </title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/graphicdesign.css" rel="stylesheet" type="text/css" media="screen" >
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <style type="text/css">a {text-decoration: none}</style>
+  </head>
+
+  <body>
+
+    <h1 align="center">
+      GRAPHIC DESIGN
+    </h1>
+
+      <h2 align="center"> charakter </h2>
+
+    <div class="images" align="center">
+      <img id="1" src="images/graphic_design/cholerisch.jpg" alt="choleric"
+      width="auto" height="400px">
+
+      <img id="2" src="images/graphic_design/leptosom.jpg" alt="melancholic"
+      width="auto" height="400px">
+
+      <img id="3" src="images/graphic_design/pytniker.jpg" alt="phlegmatic"
+      width="auto" height="400px">
+
+    </div>
+
+      <h2 align="center"> typo - komposition </h2>
+
+    <div class="images" align="center">
+
+      <img id="4" src="images/graphic_design/komposition2.jpg" alt=""
+      width="auto" height="400px">
+
+      <img id="5" src="images/graphic_design/komposition.jpg" alt=""
+      width="auto" height="400px">
+
+      <img id="6" src="images/graphic_design/letterthing.jpg" alt=""
+      width="auto" height="400px">
+
+      <img id="7" src="images/graphic_design/lettervariations.jpg" alt="variations"
+      width="auto" height="400px">
+
+    </div>
+
+      <h2 align="center"> form </h2>
+
+    <div class="images" align="center">
+
+
+      <img id="8" src="images/graphic_design/scheiß_panzer.jpg" alt="shitty tanks"
+      width="auto" height="400px">
+
+      <img id="9" src="images/graphic_design/sternzeichen.jpg" alt="star sign"
+      width="auto" height="400px">
+
+      <img id="10" src="images/graphic_design/controllergun.jpg" alt="war" width="auto" height="400px">
+
+    </div>
+      <h2 align="center"> website prototype </h2>
+      <div class=minigallery>
+        <a href="https://marvelapp.com/1ig9g31" target="_blank" >
+          <div class="w3-content w3-display-container" align=center>
+            <img class="mg" src="images/graphic_design/app.png"align="center">
+            <img class="mg" src="images/graphic_design/kalender.jpg" align="center">
+            <img class="mg" src="images/graphic_design/appwunsch.jpg"  align="center">
+            <img class="mg" src="images/graphic_design/startscreen.jpg"  align="center">
+        </a>
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          <h3 align="center"> press on picture to go to the prototype </h3>
+      </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mg");
+
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+
+
+      <div id="preview" class="modal">
+          <span class="close">close</span>
+          <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+
+
+
+<script>
+    //1
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('1');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //2
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('2');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //3
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('3');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //4
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('4');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //5
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('5');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //6
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('6');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //7
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('7');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //8
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('8');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //9
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('9');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //10
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('10');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+    //11
+      var modal = document.getElementById('preview');
+      var img = document.getElementById('11');
+      var modalImg = document.getElementById("img01");
+
+      var captionText = document.getElementById("caption");
+
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+      //12
+        var modal = document.getElementById('preview');
+        var img = document.getElementById('12');
+        var modalImg = document.getElementById("img01");
+
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      //13
+        var modal = document.getElementById('preview');
+        var img = document.getElementById('13');
+        var modalImg = document.getElementById("img01");
+
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      //14
+        var modal = document.getElementById('preview');
+        var img = document.getElementById('14');
+        var modalImg = document.getElementById("img01");
+
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      //15
+        var modal = document.getElementById('preview');
+        var img = document.getElementById('15');
+        var modalImg = document.getElementById("img01");
+
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      //16
+        var modal = document.getElementById('preview');
+        var img = document.getElementById('16');
+        var modalImg = document.getElementById("img01");
+
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      //17
+        var modal = document.getElementById('preview');
+        var img = document.getElementById('17');
+        var modalImg = document.getElementById("img01");
+
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      //18
+        var modal = document.getElementById('preview');
+        var img = document.getElementById('18');
+        var modalImg = document.getElementById("img01");
+
+        var captionText = document.getElementById("caption");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+
+
+</script>
+
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="home" align="left" >
+
+
+        <a href="index.html" >HOME</a>
+
+      </div>
+
+      <div class="about" align="right">
+
+        <a href="about.html">ABOUT</a>
+
+      </div>
+
+
+    </footer>
+
+  </body>
+</html>

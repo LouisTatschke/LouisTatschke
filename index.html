@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Louis Tatschke Website</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Dorsa:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <style type="text/css">a {text-decoration: none}</style>
+  <script>
+    var header, opacity, yPos;
+    function yScroll(){
+    	header = document.getElementById('header');
+      opacity = document.getElementById('opacity');
+    	yPos = window.pageYOffset;
+      if(yPos > 20){
+        opacity.style.opacity = "0.5";
+
+
+      } else {
+        opacity.style.opacity = "0";
+      }
+
+
+    	if(yPos > 350){
+        header.style.height = "1000px"
+        header.style.fontSize = "3em";
+        header.style.letterSpacing = "1.2em";
+        header.style.color = "grey";
+        opacity.style.opacity = "1";
+
+
+    	} else {
+        header.style.height = "1000px"
+        header.style.fontSize = "10em";
+        header.style.letterSpacing = "0.2em";
+        header.style.color = "#D4C548";
+    	}
+
+
+      if(yPos > 900){
+        header.style.opacity = "0";
+
+    	} else {
+        header.style.opacity = "1";
+    	}
+    }
+    window.addEventListener("scroll", yScroll);
+</script>
+</head>
+
+
+
+    <body background="images/background_texture.jpg">
+
+        <div id="header" align="center">
+
+              <h1 align="center" font-family="Dorsa" >Louis Tatschke</h1>
+
+        </div>
+
+
+
+      <div class="space"></div>
+
+
+
+  <div id="wrapper">
+    <div class="container">
+      <div id="opacity">
+        <img src="images/artwork/artworkpreview.jpg" alt="artwork" class="image" >
+        <div class="overlay">
+          <div class="text"> <a href="artwork.html">ARTWORK</a> </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="bild">
+      <img src="images/graphic_design/graphicdesignpreview.jpg" alt="graphicdesign" class="image">
+    </div>
+      <div class="overlay">
+        <div class="text"> <a href="graphicdesign.html">GRAPHIC DESIGN</div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <img src="images/photography/photographypreview.jpg" alt="photography" class="image" >
+
+      <div class="overlay">
+        <div class="text"><a href="photography.html" >PHOTOGRAPHY</a> </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="home" align="left" >
+        <a class="one" href="index.html" >HOME</a>
+
+      </div>
+
+      <div class="about" align="right">
+        <a href="about.html">ABOUT</a>
+
+      </div>
+
+
+    </footer>
+
+
+
+
+  </body>
+
+</html>

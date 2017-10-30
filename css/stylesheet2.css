@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Dorsa);
+@import url(https://fonts.googleapis.com/css?family=Wire+One);
+body{
+  background-color: rgba(20, 20, 20, 1.0);
+  }
+
+
+
+/*   hover effect FOOTER  */
+a {
+    color: grey;
+  	padding: 3px;
+    text-decoration: none;
+  }
+  a:visited { text-decoration: none; color:grey}
+
+  a:focus {
+  	color: white;
+  }
+
+
+
+  a:hover {
+  	color: #D4C548;
+  }
+
+  a:active {
+  	color: white;
+  }
+
+
+.space{
+  height: 1000px;
+}
+
+
+
+#header{
+    margin-top: -3%;
+    height: 1000px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 10em;
+    background-color: rgba(20, 20, 20, 0);
+    font-family: Dorsa, Wire One, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    color: #D4C548;
+    transition: 0.5s;
+  }
+
+  h1{
+  font-family: Dorsa, Wire One, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  }
+
+
+
+#wrapper{
+  position: relative;
+}
+
+#opacity{
+  opacity: 0;
+  transition: 2.0s;
+}
+
+.container {
+  margin-top: 60%;
+  margin: auto;
+  position: relative;
+  display: block;
+  margin-bottom: 17%;
+
+
+}
+.image {
+  margin: auto;
+  border-radius: 20px;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+  height: auto;
+}
+
+.overlay {
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  opacity: 0.5;
+  margin:auto;
+  width: 0%;
+  max-width: 900px;
+  height: 100%;
+  transition: .4s ease;
+}
+
+.container:hover .overlay {
+
+  opacity: 1;
+  margin: auto;
+  width: 80%;
+  max-width: 900px;
+
+}
+.text {
+  white-space: nowrap;
+  color: rgba(250, 220, 20, 1.0);
+  font-size: 1100%;
+  letter-spacing: 0.1em;
+  font-family: Dorsa, Wire One, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -100%);
+}
+
+
+.footer {
+   flex: auto;
+   position: fixed;
+   bottom:0px;
+   height:80px;
+   width:100%;
+   background:rgba(20, 20, 20, 1.0);
+
+}
+
+.home {
+  font-size: 5em;
+  letter-spacing: 0.2em;
+  font-family: Dorsa;
+  margin: 0px;
+  margin-left: 30%;
+  float:left;
+}
+.about {
+  font-size: 5em;
+  letter-spacing: 0.2em;
+  font-family: Dorsa;
+  margin: 0px;
+  margin-right: 30%;
+  float: right;
+}
