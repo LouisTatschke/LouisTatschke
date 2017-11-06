@@ -2,8 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Wire+One);
 
 body{
-    background-attachment: fixed;
+    background-color: rgba(20, 20, 20, 1);
 }
+
 
 
 /*   hover effect FOOTER  */
@@ -111,7 +112,7 @@ a {
 
   opacity: 1;
   margin: auto;
-  width: 80%;
+  width: 100%;
   max-width: 900px;
 
 }
@@ -128,11 +129,6 @@ a {
   -ms-transform: translate(-50%, -100%);
 }
 
-@media (min-width:200px) {
-
-  h1
-    {font-size: 2em;}
-}
 
 
 .footer {
