@@ -56,6 +56,15 @@ a {
   font-weight: 400;
 
   }
+  h2{
+  font-family: Wire One, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4em;
+  color: white;
+  letter-spacing: 0.1em;
+
+  }
 
 
 
@@ -68,12 +77,16 @@ a {
   transition: 2.0s;
 }
 
+#scrolldown{
+  transition: 0.4s;
+}
+
 .container {
-  margin-top: 40%;
+  margin-top: 100px;
   margin: auto;
   position: relative;
   display: block;
-  margin-bottom: 17%;
+  margin-bottom: 10%;
 
 }
 
