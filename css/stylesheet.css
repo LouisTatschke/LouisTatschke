@@ -61,7 +61,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 4em;
-  color: white;
+  color: rgba(220, 220, 220, 1);
   letter-spacing: 0.1em;
 
   }
