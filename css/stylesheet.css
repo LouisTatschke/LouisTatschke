@@ -41,7 +41,7 @@ a {
     position: fixed;
     text-align: center;
     font-size: 10em;
-    background-color: rgba(20, 20, 20, 0);
+    background-color: rgba(20, 20, 20, 1);
     font-family: Dorsa, Wire One, sans-serif;
     font-style: normal;
     font-weight: 400;
