@@ -6,17 +6,18 @@
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Dorsa:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <style type="text/css">a {text-decoration: none}</style>
   <script>
-    var header, opacity, yPos;
+    var header, opacity, yPos, footer;
     function yScroll(){
     	header = document.getElementById('header');
       opacity = document.getElementById('opacity');
     	yPos = window.pageYOffset;
       if(yPos > 20){
         opacity.style.opacity = "0.5";
-
 
       } else {
         opacity.style.opacity = "0";
@@ -31,35 +32,65 @@
       }
 
 
+      if(yPos < 320){
+        document.body.style.backgroundColor = "rgba(220, 220, 220, 1)";
+
+
+      } else {
+        document.body.style.backgroundColor = "black";
+      }
+
+
     	if(yPos > 250){
         header.style.height = "1000px"
-        header.style.fontSize = "3em";
-        header.style.letterSpacing = "1.2em";
+        header.style.fontSize = "2em";
+        header.style.letterSpacing = "1.8em";
         header.style.color = "grey";
         opacity.style.opacity = "1";
+        header.style.marginTop = "-1%";
 
 
     	} else {
         header.style.height = "1000px"
-        header.style.fontSize = "10em";
-        header.style.letterSpacing = "0.2em";
-        header.style.color = "#D4C548";
+        header.style.fontSize = "2em";
+        header.style.letterSpacing = "1.2em";
+        header.style.color = "rgba(0, 0, 0, 1)";
+        header.style.marginTop = "20%";
     	}
 
 
-      if(yPos > 800){
+      if(yPos > 900){
         header.style.opacity = "0";
 
     	} else {
         header.style.opacity = "1";
     	}
 
+      if(yPos < 320){
+        document.footer.style.backgroundColor = "rgba(220, 220, 220, 1)";
 
+
+      } else {
+        document.footer.style.backgroundColor = "black";
+      }
 
     }
+
     window.addEventListener("scroll", yScroll);
 </script>
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <body>
 
@@ -71,7 +102,7 @@
 
         <div id="header" align="center">
 
-              <h1 align="center" font-family="Dorsa" >Louis Tatschke</h1>
+              <h1 align="center" >LOUIS TATSCHKE</h1>
 
         </div>
 
@@ -121,7 +152,7 @@
 
 
 
-    <footer class="footer">
+    <footer class="footer" position="fixed">
 
       <div class="home" align="left" >
         <a class="one" href="index.html" >HOME</a>
