@@ -15,6 +15,7 @@
     function yScroll(){
     	header = document.getElementById('header');
       opacity = document.getElementById('opacity');
+      footer = document.getElementById('footer');
     	yPos = window.pageYOffset;
       if(yPos > 20){
         opacity.style.opacity = "0.5";
@@ -66,12 +67,13 @@
         header.style.opacity = "1";
     	}
 
+
       if(yPos < 320){
-        document.footer.style.backgroundColor = "rgba(220, 220, 220, 1)";
+        footer.style.backgroundColor = "rgba(220, 220, 220, 1)";
 
 
       } else {
-        document.footer.style.backgroundColor = "black";
+        footer.style.backgroundColor = "black";
       }
 
     }
@@ -152,7 +154,7 @@
 
 
 
-    <footer class="footer" position="fixed">
+    <div id="footer">
 
       <div class="home" align="left" >
         <a class="one" href="index.html" >HOME</a>
@@ -165,7 +167,7 @@
       </div>
 
 
-    </footer>
+    </div>
 
 
 
