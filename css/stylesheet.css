@@ -20,7 +20,7 @@ a {
   	color: white;
   }
   a:hover {
-  	color: rgba(120, 120, 120, 1);
+  	color: rgba(20, 20, 20, 1);
   }
   a:active {
   	color: rgba(220, 220, 220, 1);
@@ -73,10 +73,6 @@ a {
   transition: 2.0s;
 }
 
-#grayscale{
-  grayscale: 0;
-  transition: 1.0s;
-}
 
 #scrolldown{
   transition: 0.4s;
@@ -143,6 +139,7 @@ body{
 
 .container:hover .image {
   filter:grayscale(0%);
+  transition: 1.0s;
 
 }
 .text {
