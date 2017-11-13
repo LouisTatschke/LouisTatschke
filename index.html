@@ -17,14 +17,14 @@
       opacity = document.getElementById('opacity');
       footer = document.getElementById('footer');
     	yPos = window.pageYOffset;
-      if(yPos > 20){
+      if(yPos > 1%){
         opacity.style.opacity = "0.5";
 
       } else {
         opacity.style.opacity = "0";
       }
 
-      if(yPos < 20){
+      if(yPos < 1%){
         scrolldown.style.opacity = "1";
 
 
@@ -33,7 +33,7 @@
       }
 
 
-      if(yPos < 320){
+      if(yPos < 20%){
         document.body.style.backgroundColor = "rgba(220, 220, 220, 1)";
 
 
@@ -70,10 +70,12 @@
 
       if(yPos < 320){
         footer.style.backgroundColor = "rgba(220, 220, 220, 1)";
+        footer.style.color = "rgba(220, 220, 220, 1)"
 
 
       } else {
         footer.style.backgroundColor = "black";
+        footer.style.color = "rgba(220, 220, 220, 1)"
       }
 
     }
@@ -100,7 +102,6 @@
 <!--
     <body background="images/background_texture.jpg">
 -->
-
 
         <div id="header" align="center">
 
