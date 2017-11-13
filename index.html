@@ -17,14 +17,14 @@
       opacity = document.getElementById('opacity');
       footer = document.getElementById('footer');
     	yPos = window.pageYOffset;
-      if(yPos > 1%){
+      if(yPos > 20){
         opacity.style.opacity = "0.5";
 
       } else {
         opacity.style.opacity = "0";
       }
 
-      if(yPos < 1%){
+      if(yPos < 20){
         scrolldown.style.opacity = "1";
 
 
@@ -33,7 +33,7 @@
       }
 
 
-      if(yPos < 20%){
+      if(yPos < 320){
         document.body.style.backgroundColor = "rgba(220, 220, 220, 1)";
 
 

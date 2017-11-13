@@ -39,6 +39,8 @@ a {
     width: 100%;
     position: fixed;
     text-align: center;
+    font-size: 2em;
+    letter-spacing: 1.2em;
     color: rgba(20, 20, 20, 1);
     transition: 0.5s;
     animation-name: zoomIn;
@@ -49,26 +51,6 @@ a {
   font-family: Poiret One, Forum, Dorsa, Wire One, sans-serif;
   font-style: normal;
   font-weight: 100;
-  letter-spacing: 1.2em;
-  font-size: 3.5em;
-}
-
-  @media all and (max-device-width: 720px){
-      h1 {
-          font-size: 3.5;
-      }
-  }
-
-  @media all and (max-device-width: 640px){
-      h1 {
-          font-size: 3em;
-      }
-  }
-
-  @media all and (max-device-width: 320px){
-      h1 {
-          font-size: 2em;
-      }
 
   }
   h2{
