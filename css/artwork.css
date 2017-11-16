@@ -150,15 +150,20 @@ span.onclick = function() {
 }
 
 /*mini gallery*/
+.minigallery{
+      margin-bottom: -1000px;
+}
+
 .mg{
-      height: 900px;
+      max-height: 900px;
       max-width: 90%;
-      max-height: 90%;
+      min-width: inherit;
       margin: auto;
-  }
+      }
+
 
 .button-left {
-      background-color: rgba(0, 0, 0, 0.0);
+      background-color: rgba(0, 0, 0, 0.2);
       width: 49%;
       height:900px;
       text-align: left;
@@ -171,7 +176,7 @@ span.onclick = function() {
       border-style: none;
 }
 .button-right{
-      background-color: rgba(0, 0, 0, 0.0);
+      background-color: rgba(0, 0, 0, 0.2);
       width: 49%;
       height:900px;
       text-align: right;
@@ -185,14 +190,11 @@ span.onclick = function() {
 }
 
 
-.button-left:hover{
+button:hover{
       color: rgba(20, 20, 20, 0.0);
       transition: 1.5s;
 }
-.button-right:hover{
-      color: rgba(20, 20, 20, 0.0);
-      transition: 1.5s;
-}
+
 
 
 /*Zoom In*/
