@@ -20,6 +20,7 @@
     </h1>
   </div>
 
+
       <h2 align="center"> paintings </h2>
 
     <div class="images" align="center">
@@ -58,8 +59,11 @@
     </div>
 
 
+
+
+
       <h2 align="center"> SKETCHBOOK </h2>
-  <div class="minigallery">
+
             <img class="mg" src="images/artwork/sketchbook1.jpg"  align="center">
             <img class="mg" src="images/artwork/sketchbook2.jpg"  align="center">
             <img class="mg" src="images/artwork/sketchbook3.jpg"  align="center">
@@ -70,8 +74,8 @@
             <img class="mg" src="images/artwork/sketchbook8.jpg"  align="center">
             <img class="mg" src="images/artwork/monistitch.jpg"  align="center">
 
-            <button class="button-left" onclick="plusDivs(-1)"><</button>
-            <button class="button-right" onclick="plusDivs(1)">></button>
+            <button class="button-left"  onclick="plusDivs(-1), myFunction()"><</button>
+            <button class="button-right" onclick="plusDivs(1), myFunction()">></button>
           </div>
 
   <script>
@@ -96,11 +100,11 @@
       }
 
     //light-fade
-    var yPos, footer;
+  var yPos, footer;
     function yScroll(){
       yPos = window.pageYOffset;
       footer = document.getElementById('footer');
-      if(yPos > 2500){
+      if(yPos > 3500){
         document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
 
 
@@ -108,7 +112,7 @@
         document.body.style.backgroundColor = "rgba(20, 20, 20, 1.0)";
       }
 
-      if(yPos < 2500){
+      if(yPos < 3500){
         footer.style.backgroundColor = "rgba(20, 20, 20, 1)";
         footer.style.color = "rgba(220, 220, 220, 1)";
 
@@ -121,7 +125,17 @@
 
         window.addEventListener("scroll", yScroll);
 
+        //light-fade
+
+        function myFunction() {
+          footer = document.getElementById('footer');
+            document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
+            footer.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
+        }
+
   </script>
+
+
 
 
 
