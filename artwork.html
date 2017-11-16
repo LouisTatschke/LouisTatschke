@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Louis Tatschke Website </title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <link href="css/artwork.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <style type="text/css">a {text-decoration: none}</style>
   </head>
 
   <body>
 
-
+    <div class="animated zoomIn">
     <h1 align="center">
       ARTWORK
     </h1>
+  </div>
 
       <h2 align="center"> paintings </h2>
 
@@ -58,8 +59,7 @@
 
 
       <h2 align="center"> SKETCHBOOK </h2>
-  <div class=minigallery>
-          <div class="w3-content w3-display-container" align=center>
+  <div class=minigallery align="center">
             <img class="mg" src="images/artwork/sketchbook1.jpg"  align="center">
             <img class="mg" src="images/artwork/sketchbook2.jpg"  align="center">
             <img class="mg" src="images/artwork/sketchbook3.jpg"  align="center">
@@ -70,12 +70,13 @@
             <img class="mg" src="images/artwork/sketchbook8.jpg"  align="center">
             <img class="mg" src="images/artwork/monistitch.jpg"  align="center">
 
-            <button class="w3-button w3-black w3-display-left" click="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <button onclick="plusDivs(-1)"><</button>
+            <button onclick="plusDivs(1)">></button>
           </div>
   </div>
 
   <script>
+  //minigallery
       var slideIndex = 1;
       showDivs(slideIndex);
 
@@ -94,7 +95,35 @@
         }
         x[slideIndex-1].style.display = "block";
       }
+
+    //light-fade
+    var yPos, footer;
+    function yScroll(){
+      yPos = window.pageYOffset;
+      footer = document.getElementById('footer');
+      if(yPos > 2500){
+        document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
+
+
+      } else {
+        document.body.style.backgroundColor = "rgba(20, 20, 20, 1.0)";
+      }
+
+      if(yPos < 2500){
+        footer.style.backgroundColor = "rgba(20, 20, 20, 1)";
+        footer.style.color = "rgba(220, 220, 220, 1)";
+
+
+      } else {
+        footer.style.backgroundColor = "rgba(220, 220, 220, 1)";
+        footer.style.color = "rgba(220, 220, 220, 1)";
+    }
+}
+
+        window.addEventListener("scroll", yScroll);
+
   </script>
+
 
 
 
@@ -405,18 +434,18 @@
 
 
 
-    <footer class="footer">
+      <footer id="footer" position="fixed">
 
-      <div class="home" align="left" >
-        <a href="index.html" >HOME</a>
-      </div>
+        <div class="home" align="left" >
+          <a href="index.html" >HOME</a>
+        </div>
 
-      <div class="about" align="right">
-        <a href="about.html">ABOUT</a>
-      </div>
+        <div class="about" align="right">
+          <a href="about.html">ABOUT</a>
+        </div>
 
 
-    </footer>
+      </footer>
 
     <script src="script.js" rel="javascript"  type="text/javascript"></script>
 
