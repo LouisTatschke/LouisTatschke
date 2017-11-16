@@ -151,7 +151,7 @@ span.onclick = function() {
 
 /*mini gallery*/
 .mg{
-      height: 900px;
+      max-height: 900px;
       max-width: 80%;
       margin: auto;
   }
@@ -159,7 +159,7 @@ span.onclick = function() {
   button {
       background-color: rgba(0, 0, 0, 0.0);
       width: 49%;
-      height:900px;
+      max-height:900px;
       text-align: center;
       font-size: 30em;
       font-family: Dorsa;
