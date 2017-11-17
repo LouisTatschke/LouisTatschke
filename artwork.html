@@ -74,7 +74,7 @@
             <img class="mg" src="images/artwork/sketchbook8.jpg"  align="center">
             <img class="mg" src="images/artwork/monistitch.jpg"  align="center">
 
-            <button class="button-left"  onclick="plusDivs(-1), myFunction()"><</button>
+            <button class="button-left" onclick="plusDivs(-1), myFunction()"><</button>
             <button class="button-right" onclick="plusDivs(1), myFunction()">></button>
           </div>
 
@@ -104,7 +104,7 @@
     function yScroll(){
       yPos = window.pageYOffset;
       footer = document.getElementById('footer');
-      if(yPos > 3500){
+      if(yPos > 3000){
         document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
 
 
@@ -112,7 +112,7 @@
         document.body.style.backgroundColor = "rgba(20, 20, 20, 1.0)";
       }
 
-      if(yPos < 3500){
+      if(yPos < 3000){
         footer.style.backgroundColor = "rgba(20, 20, 20, 1)";
         footer.style.color = "rgba(220, 220, 220, 1)";
 
@@ -125,8 +125,8 @@
 
         window.addEventListener("scroll", yScroll);
 
-        //light-fade
 
+        var footer;
         function myFunction() {
           footer = document.getElementById('footer');
             document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
@@ -137,15 +137,12 @@
 
 
 
-
-
-
-
       <div id="preview" class="modal">
           <span class="close">close</span>
           <img class="modal-content" id="img01">
         <div id="caption"></div>
       </div>
+
 
 
   <script>
