@@ -1,37 +1,27 @@
-html {
-  height: 100%;
-}
+
 
 body{
   background-color: rgba(20, 20, 20, 1.0);
   transition: 2s;
-  display: block;
-  position: static;
-  height: 100%;
 }
 
 /*   hover effect HOME and ABOUT  */
-a {
+#home {
     color: rgba(220, 220, 220, 1.0);
   	padding: 3px;
   }
 
-  a:visited {
-    text-decoration: none;
-    color:rgba(220, 220, 220, 1.0);}
-
-  a:focus {
-  	color: white;
-  }
-
-  a:hover {
+#home:hover {
   	color: rgba(120, 120, 120, 1);
   }
+#about {
+      color: rgba(220, 220, 220, 1.0);
+    	padding: 3px;
+    }
 
-  a:active {
-  	color: rgba(220, 220, 220, 1);
-  }
-
+#about:hover {
+    	color: rgba(120, 120, 120, 1);
+    }
 
 
   h1{
@@ -39,7 +29,7 @@ a {
     font-size: 5em;
     letter-spacing: 0.5em;
     font-family: Poiret One, Dorsa, sans-serif;
-    color: rgba(200, 200, 200, 1.0);
+    color: rgba(220, 220, 220, 1.0);
     position: relative;
   }
 
@@ -49,7 +39,7 @@ a {
     font-size: 3em;
     letter-spacing: 0.1em;
     font-family: Wire One;
-    color: rgba(200, 200, 200, 1.0);
+    color: rgba(120, 120, 120, 1.0);
     position: relative;
   }
 
@@ -60,7 +50,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s;
-    margin: 3%;
+    margin: 1.5%;
     opacity: 1.0;
 
 }
@@ -71,7 +61,7 @@ img:hover {opacity: 0.6;}
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 10%;
+    padding-top: 5%;
     left: 0;
     top: 0;
     width: 100%;
@@ -81,26 +71,24 @@ img:hover {opacity: 0.6;}
     background-color: rgba(0,0,0,0.9);
 }
 
-/* Modal Content (image) */
+/* Modal image */
 .modal-content {
     margin: auto;
     display: block;
-    height: 80%;
-    max-height: 900px;
+    max-height: 80%;
+    max-width: 95%;
 }
 
 /* Caption of Modal Image */
 #caption {
-    font-family: Wire One;
+    font-family: Poiret One, Wire One;
     font-size: 5em;
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
-    padding: 10px;
-    height: 150px;
+    color: rgba(220, 220, 220, 1);
 }
 
 /* Add Animation */
@@ -126,7 +114,7 @@ img:hover {opacity: 0.6;}
     position: absolute;
     top: 0px;
     right: 0px;
-    font-size: 70em;
+    font-size: 90em;
     color: rgba(0, 0, 0, 0.0);
 }
 
