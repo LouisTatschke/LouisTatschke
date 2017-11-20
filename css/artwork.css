@@ -38,7 +38,7 @@ body{
     margin-top: 3%;
     font-size: 3em;
     letter-spacing: 0.1em;
-    font-family: Wire One;
+    font-family: Poiret One, Wire One, sans-serif;
     color: rgba(120, 120, 120, 1.0);
     position: relative;
   }
@@ -82,7 +82,7 @@ img:hover {opacity: 0.6;}
 /* Caption of Modal Image */
 #caption {
     font-family: Poiret One, Wire One;
-    font-size: 5em;
+    font-size: 3.5em;
     margin: auto;
     display: block;
     width: 80%;
@@ -211,7 +211,7 @@ button:hover{
 #footer {
      flex: auto;
      bottom:0px;
-     height:70px;
+     height:55px;
      width:100%;
      background:rgba(20, 20, 20, 1.0);
      position: fixed;
@@ -222,7 +222,7 @@ button:hover{
    }
 
     .home {
-      font-size: 3em;
+      font-size: 2.5em;
       letter-spacing: 0.2em;
       font-family: Poiret One, Dorsa, sans-serif;
       margin: 0px;
@@ -230,7 +230,7 @@ button:hover{
       float:left;
     }
     .about {
-      font-size: 3em;
+      font-size: 2.5em;
       letter-spacing: 0.2em;
       font-family: Poiret One, sans-serif;
       margin: 0px;
