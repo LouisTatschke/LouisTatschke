@@ -13,7 +13,6 @@
   </head>
 
   <body>
-
     <div class="animated zoomIn">
     <h1 align="center">
       ARTWORK
@@ -58,11 +57,13 @@
       <img id="14" src="images/artwork/haende.jpg" alt="haende" width="auto" height="400px">
     </div>
 
-
-
+</div>
 
 
       <h2 align="center"> SKETCHBOOK </h2>
+        <div class="sketchbook" align="center">
+          <button class="button-left" align="left" onclick="plusDivs(-1), myFunction()"><</button>
+          <button class="button-right" align="right" onclick="plusDivs(1), myFunction()">></button>
 
             <img class="mg" src="images/artwork/sketchbook1.jpg"  align="center">
             <img class="mg" src="images/artwork/sketchbook2.jpg"  align="center">
@@ -74,11 +75,10 @@
             <img class="mg" src="images/artwork/sketchbook8.jpg"  align="center">
             <img class="mg" src="images/artwork/monistitch.jpg"  align="center">
 
-            <button class="button-left" onclick="plusDivs(-1), myFunction()"><</button>
-            <button class="button-right" onclick="plusDivs(1), myFunction()">></button>
-      </div>
 
-  <script>
+        </div>
+
+<script>
   //minigallery
       var slideIndex = 1;
       showDivs(slideIndex);
@@ -145,7 +145,7 @@
         about.style.color = "rgba(20, 20, 20, 1)";
         }
 
-  </script>
+</script>
 
 
 
@@ -157,7 +157,7 @@
 
 
 
-  <script>
+<script>
     var img1 = document.getElementById('1');
     var img2 = document.getElementById('2');
     var img3 = document.getElementById('3');
@@ -172,7 +172,6 @@
     var img12 = document.getElementById('12');
     var img13 = document.getElementById('13');
     var img14 = document.getElementById('14');
-    var img15 = document.getElementById('15');
     var modal = document.getElementById('preview');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -182,90 +181,80 @@
         modal.style.display = "none";
         }
 
-
-    img1.onclick = function(){
+//Bilder
+img1.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img2.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img3.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img4.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img5.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img6.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img7.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
           captionText.innerHTML = this.alt;
-}
+  }
     img8.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img9.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img10.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img11.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img12.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img13.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
+  }
     img14.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
-}
-    img15.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
 
 }
-
 
   </script>
-
-
-
-
 
 
 
@@ -281,9 +270,6 @@
 
 
       </footer>
-
-
-
 
 
   </body>

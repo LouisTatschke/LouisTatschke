@@ -3,7 +3,10 @@
 body{
   background-color: rgba(20, 20, 20, 1.0);
   transition: 2s;
+  height: 100%;
 }
+
+
 
 /*   hover effect HOME and ABOUT  */
 #home {
@@ -146,44 +149,46 @@ span.onclick = function() {
 
 
 /*mini gallery*/
-.minigallery{
-      margin-bottom: -1000px;
+.sketchbook{
+  max-height: 1000px;
+  z-index: 0;
 }
 
 .mg{
-      max-height: 900px;
-      max-width: 90%;
-      min-width: inherit;
+      max-height: 1000px;
+      max-width: 100%;
       margin: auto;
+      z-index: 1;
+      position: sticky;
+      transform: translate(0%, -100%);
+      margin-bottom: 10%;
       }
 
 
 .button-left {
       text-align: left;
+      z-index: 1;
 }
 .button-right{
       text-align: right;
+      z-index: 1;
 }
 button{
-      display: run-in;
+
       background-color: rgba(0, 0, 0, 0.0);
       width: 49%;
-      height:900px;
+      height:1000px;
       font-size: 30em;
       font-family: Dorsa;
       color: rgba(120, 120, 120, 0.4);
       cursor: pointer;
-      transform: translate(0%, -100%);
-      -ms-transform: translate(-100%, -100%);
       border-style: none;
+      z-index: 0;
     }
 
-button:hover{
-      color: rgba(20, 20, 20, 0.0);
-      transition: 1.5s;
-      border-style: none;
-}
-
+.mg:hover{
+      opacity: 1;
+  }
 
 
 /*Zoom In*/
@@ -206,6 +211,10 @@ button:hover{
       animation-name: zoomIn;
 }
 
+
+  .negativespace {
+    margin-bottom: -500px;
+  }
 
 /*footer*/
 #footer {
