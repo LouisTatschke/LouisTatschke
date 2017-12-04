@@ -6,30 +6,12 @@ body{
 }
 
 
-/*   hover effect FOOTER  */
-a {
-    color: rgba(220, 220, 220, 1);
-  	padding: 3px;
-    text-decoration: none;
-  }
-  a:visited {
-    text-decoration: none;
-    color: rgba(220, 220, 220, 1);
-  }
-  a:focus {
-  	color: white;
-  }
-  a:hover {
-  	color: rgba(20, 20, 20, 1);
-  }
-  a:active {
-  	color: rgba(220, 220, 220, 1);
-  }
-
 
 .space{
   height: 1000px;
 }
+
+
 
 
 
@@ -89,7 +71,6 @@ body{
   position: relative;
   display: block;
   margin-bottom: 17%;
-
 }
 
 
@@ -101,48 +82,17 @@ body{
   width: 90%;
   max-width: 900px;
   height: 100%;
-  filter:grayscale(100%);
+  filter:grayscale(20%) blur(0px);
 }
-/*
-.overlay {
-  margin:auto;
-  border-radius: 10px;
-  display: block;
-  width: 90%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0.5;
-  max-width: 900px;
-  height: 100%;
-  transition: .4s ease;
-}
-
-
-
-
-.container:hover .overlay {
-
-  opacity: 1;
-  filter:grayscale(0%);
-  margin: auto;
-  width: 100%;
-  max-width: 900px;
-}
-*/
-
 
 .container:hover .image {
-  filter:grayscale(0%);
+  filter:grayscale(100%) blur(10px);
   transition: 1.0s;
-
 }
+
+
 .text {
-  white-space: nowrap;
-  color: rgba(250, 220, 20, 1.0);
+  color: rgba(220, 220, 220, 1.0);
   font-size: 600%;
   letter-spacing: 0.1em;
   font-family: Poiret One, Dorsa, Wire One, sans-serif;
@@ -153,28 +103,20 @@ body{
   -ms-transform: translate(-50%, -100%);
 }
 
-/*
-.animated {
-  animation-duration: 5.2s;
-  animation-fill-mode: both;
+.text:hover{
+  cursor: pointer;
 }
 
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1);
+
+
+
+/*   hover effect FOOTER  */
+a {
+    color: rgba(220, 220, 220, 1);
+  	padding: 3px;
+    text-decoration: none;
+  	filter:blur(0px);
   }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  animation-name: zoomIn;
-}
-*/
-
 
 
 
@@ -198,6 +140,9 @@ body{
   margin-left: 25%;
   float:left;
 }
+.home:hover {
+  filter: blur(1.5px);
+}
 .about {
   font-size: 2.5em;
   letter-spacing: 0.2em;
@@ -205,4 +150,7 @@ body{
   margin: 0px;
   margin-right: 25%;
   float: right;
+}
+.about:hover {
+  filter: blur(1.5px);
 }
