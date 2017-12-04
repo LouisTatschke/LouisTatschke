@@ -12,11 +12,11 @@ body{
 
 
   h1{
-    margin-left: 7%;
+    margin-left: 3%;
     margin-top: 3%;
-    font-size: 8em;
+    font-size: 5em;
     letter-spacing: 0.5em;
-    font-family: Dorsa;
+    font-family: Poiret One, Wire One, sans-serif;
     color: rgba(200, 200, 200, 1.0);
     position: relative;
   }
@@ -24,9 +24,9 @@ body{
   h2{
 
     margin-top: 3%;
-    font-size: 3em;
-    letter-spacing: 0.1em;
-    font-family: Wire One;
+    font-size: 2em;
+    letter-spacing: 0.4em;
+    font-family: Poiret One, Wire One, sans-serif;
     color: rgba(200, 200, 200, 1.0);
     position: relative;
   }
@@ -69,8 +69,9 @@ body{
 
   /* Caption of Modal Image */
   #caption {
-      font-family: Wire One;
-      font-size: 5em;
+      font-family: Poiret One, Wire One, sans-serif;
+      font-size: 3em;
+      letter-spacing: 0.5em;
       margin: auto;
       display: block;
       width: 80%;
@@ -104,7 +105,7 @@ body{
       position: absolute;
       top: 0px;
       right: 0px;
-      font-size: 70em;
+      font-size: 100em;
       color: rgba(0, 0, 0, 0.0);
   }
 
@@ -138,12 +139,13 @@ body{
   margin-bottom: 3%;
 }
 
+/*animations*/
 
 .animated {
     animation-duration: 0.5s;
     animation-fill-mode: both;
   }
-
+/*fadeInDown*/
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -155,17 +157,30 @@ body{
     transform: none;
   }
 }
-
 .fadeInDown {
   animation-name: fadeInDown;
 }
 
+/*zoomIn*/
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+}
 
 
       .navbutton {
           position: fixed;
           background-color: rgba(220, 20, 20, 0.0);
-          height: 30px;
+          height: 20px;
           width: 100%;
           color: rgba(220, 220, 220, 1.0);
           font-size: 16px;
