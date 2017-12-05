@@ -194,18 +194,21 @@ body{
       .navbar {
           position: relative;
           display: inline-block;
+          box-shadow: inset 0px 40px 40px rgba(20,20,20,1.0);
       }
 
       .nav-content {
           display: none;
           position: fixed;
-          background: -webkit-linear-gradient( rgba(20,20,20,1.0), rgba(20,20,20,0.5));
+          background: -webkit-linear-gradient( rgba(20,20,20,1.0), rgba(20,20,20,0.8));
           z-index: 1;
           text-align: center;
           margin-top: -30px;
           padding-top: 10%;
+          padding-bottom: 4%;
           padding-left: 40%;
           padding-right: 50%;
+          box-shadow: inset 0px 40px 40px rgba(20,20,20,1.0);
       }
 
       .nav-content a {

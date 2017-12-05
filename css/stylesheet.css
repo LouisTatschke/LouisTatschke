@@ -3,18 +3,12 @@
 
 body{
     background-color: rgba(220, 220, 220, 1);
+    transition: 2.3s;
 }
-
-
 
 .space{
   height: 1000px;
 }
-
-
-
-
-
 #header{
     margin-top: 20%;
     height: 1000px;
@@ -29,22 +23,19 @@ body{
   }
 
   h1{
-  font-family: Poiret One, Forum, Dorsa, Wire One, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-
+    font-family: Poiret One, Forum, Dorsa, Wire One, sans-serif;
+    font-style: normal;
+    font-weight: 100;
   }
+
   h2{
-  font-family: Wire One, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2em;
-  color: rgba(120, 120, 120, 1);
-  letter-spacing: 0.1em;
-
+    font-family: Poiret One, Forum, Wire One, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: rgba(120, 120, 120, 1);
+    letter-spacing: 0.3em;
   }
-
-
 
 #wrapper{
   position: relative;
@@ -61,9 +52,6 @@ body{
   transition: 0.4s;
 }
 
-body{
-  transition: 2.3s;
-}
 
 .container {
   margin-top: 100px;
@@ -73,11 +61,9 @@ body{
   margin-bottom: 17%;
 }
 
-
-
 .image {
   margin: auto;
-  border-radius: 10px;
+  border-radius: 3px;
   display: block;
   width: 90%;
   max-width: 900px;
@@ -95,7 +81,6 @@ body{
   -webkit-transition: .55s ease-in-out;
 }
 
-
 .text {
   color: rgba(220, 220, 220, 1.0);
   font-size: 600%;
@@ -108,14 +93,6 @@ body{
   -ms-transform: translate(-50%, -100%);
 }
 
-.text:hover{
-  cursor: pointer;
-}
-
-
-
-
-/*   hover effect FOOTER  */
 a {
     color: rgba(220, 220, 220, 1);
   	padding: 3px;
@@ -123,18 +100,14 @@ a {
   	filter:blur(0px);
   }
 
-
-
-
 #footer {
    flex: auto;
    bottom:0px;
    height:55px;
    width:100%;
-   background:rgba(220, 220, 220, 1.0);
+   background:rgba(220, 220, 220, 0.0);
    position: fixed;
    transition: 2.3s;
-
 }
 
 .home {
