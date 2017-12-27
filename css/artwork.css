@@ -193,7 +193,70 @@ button{
 }
 
 
-/*footer*/
+
+.topnav {
+  overflow: hidden;
+  background:rgba(20, 20, 20, 0.0);
+  align-items: center;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgba(220, 220, 220, 1.0);
+  font-family: Poiret One, Dorsa, sans-serif;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.topnav a:hover {
+  filter: blur(1.5px);
+}
+
+
+.pages a{
+  font-size: 1.3em;
+  filter:brightness(80%);
+
+}
+
+.active {
+  background-color: rgba(60, 60, 60, 1.0);
+}
+
+.topnav .icon {
+  display: none;
+  margin-right: 48%;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+/*footer
 #footer {
      flex: auto;
      bottom:0px;
@@ -203,9 +266,10 @@ button{
      position: fixed;
      transition: 2s;
      color: rgba(20, 20, 20, 1.0);
+     overflow: hidden;
+     float: inherit;
 
-
-   }
+}
 
     .home {
       font-size: 2.5em;
@@ -214,6 +278,7 @@ button{
       margin: 0px;
       margin-left: 25%;
       float:left;
+      color: rgba(20, 20, 20, 1.0);
     }
     .home:hover {
       filter: blur(1.5px);
@@ -225,7 +290,8 @@ button{
       margin: 0px;
       margin-right: 25%;
       float: right;
+      color: rgba(20, 20, 20, 1.0);
     }
     .about:hover {
       filter: blur(1.5px);
-    }
+*/
