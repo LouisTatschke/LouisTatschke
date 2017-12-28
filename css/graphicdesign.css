@@ -180,7 +180,7 @@ img:hover {
   font-size: 4.3em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 2000px) {
   .top a {
     display: none;
   }
@@ -190,7 +190,8 @@ img:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 9
+  2000px) {
   .top.responsive {
     position: relative;
   }
