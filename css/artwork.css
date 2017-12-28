@@ -215,11 +215,11 @@ button {
 
 .top .icon {
   display: none;
-  margin-right: 2%;
+  margin-right: 2%; m
   font-size: 4.3em;
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .top a {
     display: none;
   }
@@ -229,7 +229,7 @@ button {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .top.responsive {
     position: relative;
   }
