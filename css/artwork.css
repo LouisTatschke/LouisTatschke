@@ -1,11 +1,9 @@
 body {
   background-color: rgba(20, 20, 20, 1.0);
-  transition: 2s;
-  height: 100%;
+  transition: 1s;
 }
 
 h1 {
-  margin-top: 3%;
   font-size: 5em;
   letter-spacing: 0.5em;
   font-family: Poiret One, Dorsa, sans-serif;
@@ -15,7 +13,7 @@ h1 {
 
 h2 {
   margin-top: 3%;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 0.1em;
   font-family: Poiret One, Wire One, sans-serif;
   color: rgba(120, 120, 120, 1.0);
@@ -28,7 +26,7 @@ img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
-  margin: 1.5%;
+  margin: 3%;
   opacity: 1.0;
 }
 
@@ -119,19 +117,6 @@ img:hover {
   .modal-content {
     width: 100%;
   }
-}
-
-img.onclick=function() {
-  modal.style.display="block";
-  modalImg.src=this.src;
-  captionText.innerHTML=this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span=document.getElementsByClassName("close")[0];
-// When the user clicks on <span> (x), close the modal
-span.onclick=function() {
-  modal.style.display="none";
 }
 
 /*mini gallery*/
@@ -263,43 +248,3 @@ button {
     font-size: 2em;
   }
 }
-
-/*footer
-#footer {
-     flex: auto;
-     bottom:0px;
-     height:55px;
-     width:100%;
-     background:rgba(20, 20, 20, 1.0);
-     position: fixed;
-     transition: 2s;
-     color: rgba(20, 20, 20, 1.0);
-     overflow: hidden;
-     float: inherit;
-
-}
-
-    .home {
-      font-size: 2.5em;
-      letter-spacing: 0.2em;
-      font-family: Poiret One, Dorsa, sans-serif;
-      margin: 0px;
-      margin-left: 25%;
-      float:left;
-      color: rgba(20, 20, 20, 1.0);
-    }
-    .home:hover {
-      filter: blur(1.5px);
-    }
-    .about {
-      font-size: 2.5em;
-      letter-spacing: 0.2em;
-      font-family: Poiret One, sans-serif;
-      margin: 0px;
-      margin-right: 25%;
-      float: right;
-      color: rgba(20, 20, 20, 1.0);
-    }
-    .about:hover {
-      filter: blur(1.5px);
-*/

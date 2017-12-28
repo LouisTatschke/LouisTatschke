@@ -13,20 +13,15 @@
 
   <body>
 
-
-    <div class="navbar">
-      <button class="navbutton"><i class="angle double down icon"></i></button>
-        <div class="nav-content">
-          <div class="animated fadeInDown">
-          <ul>
-            <a class="site" href="index.html">HOME</a></li>
-            <a class="work" href="artwork.html">ARTWORK</a></li>
-            <a class="work" href="graphicdesign.html">GRAPHIC DESIGN</a></li>
-            <a class="work" href="photography.html">PHOTOGRAPHY</a></li>
-            <a class="site" href="about.html">CONTACT</a></li>
-          </ul>
-        </div>
+    <div class="top" id="myTopnav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <div class="pages" align="center">
+        <a href="artwork.html" >ARTWORK</a>
+        <a href="graphicdesign.html">GRAPHIC DESIGN</a>
+        <a href="photography.html" class="active">PHOTOGRAPHY</a>
       </div>
+      <a href="javascript:void(0);" class="icon" align="center" onclick="myFunction()">&#9776;</a>
     </div>
 
 
@@ -43,17 +38,14 @@
 
       <div class="images" align="center">
 
-          <img id="1" src="images/photography/schrecklich2.jpg" alt="City-Night" width="auto" height="400px">
-
-          <img id="2" src="images/photography/schrecklich3.jpg" alt="haus" width="auto" height="400px">
-
-          <img id="3" src="images/photography/schrecklich4.jpg" alt="haus" width="auto" height="400px">
+          <img id="1" src="images/photography/schrecklich2.jpg" alt="CITY-NIGHT" width="auto" height="400px">
+          <img id="2" src="images/photography/schrecklich3.jpg" alt="" width="auto" height="400px">
+          <img id="3" src="images/photography/schrecklich4.jpg" alt="" width="auto" height="400px">
 
           <img id="4" src="" >
 
-          <img id="5" src="images/photography/schrecklich6.jpg" alt="haus" width="auto" height="400px">
-
-          <img id="6" src="images/photography/schrecklich7.jpg" alt="haus" width="auto" height="400px">
+          <img id="5" src="images/photography/schrecklich6.jpg" alt="" width="auto" height="400px">
+          <img id="6" src="images/photography/schrecklich7.jpg" alt="" width="auto" height="400px">
 
       </div>
 
@@ -61,11 +53,8 @@
 
       <div class="images" align="center">
           <img id="7" src="images/photography/frei1.jpg" alt="seek and destroy #1" width="auto" height="400px">
-
           <img id="8" src="images/photography/frei2.jpg" alt="seek and destroy #2" width="auto" height="400px">
-
           <img id="9" src="images/photography/frei4.jpg" alt="seek and destroy #3" width="auto" height="400px">
-
           <img id="10" src="images/photography/frei3.jpg" alt="seek and destroy #4" width="auto" height="400px">
 
       </div>
@@ -75,19 +64,12 @@
       <div class="images" align="center">
 
           <img id="11" src="images/photography/analog1.jpg" alt="rooftop view" width="auto" height="400px">
-
           <img id="12" src="images/photography/analog2.jpg" alt="rooftop neighbour" width="auto" height="400px">
-
           <img id="13" src="images/photography/analog3.jpg" alt="rooftop boy" width="auto" height="400px">
-
           <img id="14" src="images/photography/analog4.jpg" alt="berlin view" width="auto" height="400px">
-
           <img id="15" src="images/photography/analog5.jpg" alt="rooftop boys" width="auto" height="400px">
-
           <img id="16" src="images/photography/analog6.jpg" alt="tree talk" width="auto" height="400px">
-
           <img id="17" src="images/photography/analog7.jpg" alt="sneeky" width="auto" height="400px">
-
           <img id="18" src="images/photography/analog8.jpg" alt="analog photography" width="auto" height="400px">
       </div>
 
@@ -102,24 +84,110 @@
 
 
       <script>
-        //1
-          var modal = document.getElementById('preview');
-          var img = document.getElementById('1');
-          var modalImg = document.getElementById("img01");
 
-          var captionText = document.getElementById("caption");
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "top") {
+          x.className += "responsive";
+        } else {
+          x.className = "top";
+        }
+      }
+      var img1 = document.getElementById('1');
+      var img2 = document.getElementById('2');
+      var img3 = document.getElementById('3');
+      var img4 = document.getElementById('4');
+      var img5 = document.getElementById('5');
+      var img6 = document.getElementById('6');
+      var img7 = document.getElementById('7');
+      var img8 = document.getElementById('8');
+      var img9 = document.getElementById('9');
+      var img10 = document.getElementById('10');
+      var img11 = document.getElementById('11');
+      var img12 = document.getElementById('12');
+      var img13 = document.getElementById('13');
+      var img14 = document.getElementById('14');
+      var modal = document.getElementById('preview');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      var span = document.getElementsByClassName("close")[0];
 
-          img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-          }
-          var span = document.getElementsByClassName("close")[0];
-          span.onclick = function() {
-              modal.style.display = "none";
-          }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
 
+      //Bilder
+      img1.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img2.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img3.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img4.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img5.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img6.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img7.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img8.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img9.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img10.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img11.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img12.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img13.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      img14.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
 
+      }
 
       </script>
 

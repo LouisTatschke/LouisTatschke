@@ -84,15 +84,6 @@
   </div>
 
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "top") {
-        x.className += "responsive";
-      } else {
-        x.className = "top";
-      }
-    }
-
     //minigallery
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -100,7 +91,6 @@
     function plusDivs(n) {
       showDivs(slideIndex += n);
     }
-
     function showDivs(n) {
       var i;
       var x = document.getElementsByClassName("mg");
@@ -199,7 +189,6 @@
     span.onclick = function() {
       modal.style.display = "none";
     }
-
     //Bilder
     img1.onclick = function() {
       modal.style.display = "block";
@@ -270,7 +259,15 @@
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
+    }
 
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "top") {
+        x.className += " responsive";
+      } else {
+        x.className = "top";
+      }
     }
   </script>
 
