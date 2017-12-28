@@ -167,7 +167,7 @@ img:hover {
 
 .pages a {
   font-size: 1.3em;
-  filter: brightness(80%);
+  filter: brightness(30%);
 }
 
 .active {
