@@ -1,6 +1,7 @@
 body {
   background-color: rgba(20, 20, 20, 1.0);
   transition: 1s;
+  min-width:100%;
 }
 
 h1 {
@@ -226,8 +227,9 @@ button {
 .top .icon {
   display: none;
   margin-right: 2%;
-  font-size: 4em;
+  font-size: 3em;
 }
+
 
 @media only screen and (max-width: 900px) {
   .top a {
@@ -241,7 +243,7 @@ button {
     position: relative;
   }
   .top.responsive .icon {
-    font-size: 4em;
+    font-size: 3em;
     z-index: 1;
     position: absolute;
     right: 0;
@@ -260,5 +262,11 @@ button {
   }
   h2{
     font-size: 1em;
+  }
+  img{
+    max-width:80%;
+  }
+  body{
+    width: 100%;
   }
 }
