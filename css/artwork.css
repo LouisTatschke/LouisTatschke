@@ -1,206 +1,210 @@
-
-
-body{
+body {
   background-color: rgba(20, 20, 20, 1.0);
   transition: 2s;
   height: 100%;
 }
 
+h1 {
+  margin-top: 3%;
+  font-size: 5em;
+  letter-spacing: 0.5em;
+  font-family: Poiret One, Dorsa, sans-serif;
+  color: rgba(220, 220, 220, 1.0);
+  position: relative;
+}
 
-
-  h1{
-    margin-top: 3%;
-    font-size: 5em;
-    letter-spacing: 0.5em;
-    font-family: Poiret One, Dorsa, sans-serif;
-    color: rgba(220, 220, 220, 1.0);
-    position: relative;
-  }
-
-  h2{
-
-    margin-top: 3%;
-    font-size: 3em;
-    letter-spacing: 0.1em;
-    font-family: Poiret One, Wire One, sans-serif;
-    color: rgba(120, 120, 120, 1.0);
-    position: relative;
-  }
-
-
+h2 {
+  margin-top: 3%;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  font-family: Poiret One, Wire One, sans-serif;
+  color: rgba(120, 120, 120, 1.0);
+  position: relative;
+}
 
 /*   Gallery  */
-img {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-    margin: 1.5%;
-    opacity: 1.0;
 
+img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 1.5%;
+  opacity: 1.0;
 }
-img:hover {opacity: 0.6;}
+
+img:hover {
+  opacity: 0.6;
+}
 
 /* background */
+
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 5%;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.0);
-    background-color: rgba(0,0,0,0.9);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* Modal image */
+
 .modal-content {
-    margin: auto;
-    display: block;
-    max-height: 80%;
-    max-width: 95%;
+  margin: auto;
+  display: block;
+  max-height: 80%;
+  max-width: 95%;
 }
 
 /* Caption of Modal Image */
+
 #caption {
-    font-family: Poiret One, Wire One;
-    font-size: 3.5em;
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: rgba(220, 220, 220, 1);
+  font-family: Poiret One, Wire One;
+  font-size: 3.5em;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: rgba(220, 220, 220, 1);
 }
 
 /* Add Animation */
+
 .modal-content, #caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-    from {transform: scale(0.1)}
-    to {transform: scale(1)}
+  from {
+    transform: scale(0.1)
+  }
+  to {
+    transform: scale(1)
+  }
 }
-
 
 .close {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    font-size: 90em;
-    color: rgba(0, 0, 0, 0.0);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 90em;
+  color: rgba(0, 0, 0, 0.0);
 }
 
-.close:hover{
-    cursor: pointer;
+.close:hover {
+  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+img.onclick=function() {
+  modal.style.display="block";
+  modalImg.src=this.src;
+  captionText.innerHTML=this.alt;
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
+var span=document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+span.onclick=function() {
+  modal.style.display="none";
 }
 
-
-
 /*mini gallery*/
-.sketchbook{
+
+.sketchbook {
   max-height: 1000px;
   z-index: 0;
 }
 
-.mg{
-      max-height: 1000px;
-      max-width: 100%;
-      margin: auto;
-      z-index: 1;
-      position: sticky;
-      transform: translate(0%, -100%);
-      margin-bottom: 10%;
-      }
-
+.mg {
+  max-height: 1000px;
+  max-width: 100%;
+  margin: auto;
+  z-index: 1;
+  position: sticky;
+  transform: translate(0%, -100%);
+  margin-bottom: 10%;
+}
 
 .button-left {
-      text-align: left;
-      z-index: 1;
+  text-align: left;
+  z-index: 1;
 }
-.button-right{
-      text-align: right;
-      z-index: 1;
+
+.button-right {
+  text-align: right;
+  z-index: 1;
 }
-button{
 
-      background-color: rgba(0, 0, 0, 0.0);
-      width: 49%;
-      height:1000px;
-      font-size: 30em;
-      font-family: Dorsa;
-      color: rgba(120, 120, 120, 0.4);
-      cursor: pointer;
-      border-style: none;
-      z-index: 0;
-    }
+button {
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 49%;
+  height: 1000px;
+  font-size: 30em;
+  font-family: Dorsa;
+  color: rgba(120, 120, 120, 0.4);
+  cursor: pointer;
+  border-style: none;
+  z-index: 0;
+}
 
-.mg:hover{
-      opacity: 1;
-  }
-
+.mg:hover {
+  opacity: 1;
+}
 
 /*Zoom In*/
-  .animated {
-      animation-duration: 1s;
-      animation-fill-mode: both;
-    }
 
-    @keyframes zoomIn {
-      from {
-        opacity: 0;
-        transform: scale3d(.1, .1, .1);
-      }
-
-      50% {
-        opacity: 1;
-      }
-    }
-    .zoomIn {
-      animation-name: zoomIn;
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1);
+  }
+  50% {
+    opacity: 1;
+  }
+}
 
+.zoomIn {
+  animation-name: zoomIn;
+}
 
-.topnav {
+.top {
   overflow: hidden;
-  background:rgba(20, 20, 20, 0.0);
+  background: rgba(20, 20, 20, 0.0);
   align-items: center;
 }
 
-.topnav a {
+.top a {
   float: left;
   display: block;
   color: rgba(220, 220, 220, 1.0);
@@ -211,50 +215,54 @@ button{
   font-size: 1.3em;
 }
 
-.topnav a:hover {
+.top a:hover {
   filter: blur(1.5px);
 }
 
-
-.pages a{
+.pages a {
   font-size: 1.3em;
-  filter:brightness(80%);
-
+  filter: brightness(80%);
 }
 
 .active {
   background-color: rgba(60, 60, 60, 1.0);
 }
 
-.topnav .icon {
+.top .icon {
   display: none;
-  margin-right: 48%;
+  margin-right: 2%;
+  font-size: 4.3em;
 }
 
 @media screen and (max-width: 900px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
+  .top a {
+    display: none;
+  }
+  .top a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .top.responsive {
+    position: relative;
+  }
+  .top.responsive .icon {
+    font-size: 4em;
+    z-index: 1;
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .top.responsive a {
     float: none;
     position: relative;
     display: block;
     text-align: center;
+    font-size: 2em;
   }
 }
-
-
 
 /*footer
 #footer {
