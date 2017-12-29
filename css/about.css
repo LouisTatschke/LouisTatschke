@@ -7,22 +7,19 @@ body {
 
 h2 {
   font-family: Poiret One, Wire One, sans-serif;
-  font-size: 3em;
+  font-size: 2.2em;
   letter-spacing: 0.1em;
   color: rgba(180, 180, 180, 1.0);
 }
 .number {
   font-family: Poiret One, Wire One, sans-serif;
-  font-size: 1.7em;
+  font-size: 1.3em;
   letter-spacing: 0.3em;
   color: rgba(250, 250, 250, 1.0);
   position: relative;
   margin: auto;
 
 }
-
-
-
 
 #portrait {
   display: block;
@@ -35,7 +32,7 @@ h2 {
 .content {
   margin-top: 5%;
   font-family: Poiret One, Wire One, sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
   letter-spacing: 0.1em;
   color: rgba(220, 220, 220, 1.0);
   /*font-variant: small-caps;*/
@@ -46,7 +43,7 @@ h2 {
   margin: auto;
   width: 40%;
   margin: auto;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: Poiret One, Wire One, sans-serif;
   color: rgba(220, 220, 220, 1.0);
 }
@@ -145,7 +142,10 @@ input[type=submit]:hover {
     background-color: rgba(20, 20, 20, 1.0);
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+  .number{
+    font-size: 1.1em;
   }
   img {
     max-width: 80%;

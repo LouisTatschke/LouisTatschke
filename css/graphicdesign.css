@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  margin: 5%;
+  margin: 7%;
   font-size: 3em;
   letter-spacing: 0.5em;
   font-family: Poiret One, Dorsa, sans-serif;
@@ -207,11 +207,11 @@ img:hover {
   }
   h1 {
     font-size: 2em;
-    margin-top: 10%;
+    margin: 13%;
     margin-bottom: 10%;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   img {
     width: 70%;

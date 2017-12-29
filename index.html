@@ -12,73 +12,73 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
-
-
 <body>
+
   <div class="top" id="myTopnav">
-    <a href="index.html" class="active">HOME</a>
-    <a href="about.html">CONTACT</a>
+      <a href="index.html" class="active">HOME</a>
+      <a href="about.html">CONTACT</a>
     <div class="pages" align="center">
-      <a href="artwork.html">ARTWORK</a>
-      <a href="graphicdesign.html">GRAPHIC DESIGN</a>
-      <a href="photography.html">PHOTOGRAPHY</a>
+        <a href="artwork.html">ARTWORK</a>
+        <a href="graphicdesign.html">GRAPHIC DESIGN</a>
+        <a href="photography.html">PHOTOGRAPHY</a>
     </div>
     <a href="javascript:void(0);" class="icon" align="center" onclick="myFunction()">&#9776;</a>
   </div>
 
 
   <div id="header" align="center">
-
     <h1 align="center">LOUIS TATSCHKE</h1>
-
   </div>
 
 
   <div class="space"></div>
+
 
   <div id="scrolldown" align="center">
     <h2 align="center">SCROLL ME</h2>
   </div>
 
 
-
   <div id="wrapper">
     <div id="opacity">
-    <div class="container">
+      <div class="container">
         <img src="images/artwork/artworkpreview.jpg" alt="artwork" class="image">
         <div class="overlay">
           <div class="text"> <a href="artwork.html">ARTWORK</a> </div>
-
+        </div>
       </div>
-    </div>
-
-    <div class="container">
-      <img src="images/graphic_design/graphicdesignpreview.jpg" alt="graphicdesign" class="image">
-      <div class="overlay">
-        <div class="text"> <a href="graphicdesign.html">GRAPHIC DESIGN</div>
+      <div class="container">
+        <img src="images/graphic_design/graphicdesignpreview.jpg" alt="graphicdesign" class="image">
+          <div class="overlay">
+            <div class="text"> <a href="graphicdesign.html">GRAPHIC DESIGN</div>
+          </div>
       </div>
-      </div>
-
     <div class="container">
         <img src="images/photography/photography_preview.jpg" alt="photography" class="image" >
         <div class="overlay">
         <div class="text"><a href="photography.html" >PHOTOGRAPHY</a> </div>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "top") {
-      x.className += " responsive";
-    } else {
-      x.className = "top";
+  <div class="contact" align="center">
+    <a href="about.html">CONTACT</a>
+  </div>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "top") {
+        x.className += " responsive";
+      } else {
+        x.className = "top";
+      }
     }
-  }
 
     var header, opacity, yPos, top;
+
     function yScroll() {
       header = document.getElementById('header');
       opacity = document.getElementById('opacity');
@@ -125,7 +125,7 @@
       }
     }
     window.addEventListener("scroll", yScroll);
-  </script>
+</script>
 
 
 </body>
