@@ -1,72 +1,71 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Louis Tatschke ABOUT </title>
-    <link href="css/about.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <style type="text/css">a {text-decoration: none}</style>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <title>Louis Tatschke Contact </title>
+  <link href="css/about.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+</head>
 
 <body>
 
-<img id="portrait" src="images/me.jpg" align="center" >
-
-
-
-<div class="content" align="center" >
-  <hr>
-
-  My Name is Louis Tatschke.
-  I was born and raised in Berlin.
-  <br>
-  I'm studying Communication Design at the Univerity of Applied Sciences.
-  <br>
-  <br>
-  Drawing, Painting, Designing, Carpentering and taking pictures are my passion.
-  <br>
-  <br>
-  Let's do some stuff together!
-
-</div>
-
-<div class="link>">
-
-  <div class="insta" align="left">
-        <a href="https://www.instagram.com/louistatschke/" target="_blank" >
-        <img src="images/insta.svg">
-        </a>
+  <div class="top" id="myTopnav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">CONTACT</a>
+    <div class="pages" align="center">
+      <a href="artwork.html" class="active">ARTWORK</a>
+      <a href="graphicdesign.html">GRAPHIC DESIGN</a>
+      <a href="photography.html">PHOTOGRAPHY</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" align="center" onclick="myFunction()">&#9776;</a>
   </div>
 
-  <div class="mail" align="right">
-        <a href="mailto:ltatschke@gmail.com">
-        <img src="images/mail.svg">
-        </a>
+  <img id="portrait" src="images/me.jpg" align="center">
+
+
+  <div class="content" align="center">
+     My Name is Louis Tatschke. I was born and raised in Berlin.
+    <br> I'm studying Communication Design at the Univerity of Applied Sciences.
+    <br>
+    <br> Drawing, Painting, Designing, Carpentering and taking pictures are my passion.
+    <br>
+    <br> Let's do some stuff together!
+
   </div>
 
-</div>
 
 
-  <footer class="footer">
-
-    <div class="home" align="left" >
-
-
-      <a href="index.html" >HOME</a>
-
-    </div>
-
-    <div class="about" align="right">
-
-      <a href="about.html">ABOUT</a>
-
-    </div>
+  </div>
+  <div class="mailbox">
+    <form action="mailto:ltatschke@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="">
+      <label for="subject">Message</label>
+      <br>
+      <textarea id="subject" name="subject" placeholder="" ></textarea>
+      <br><br>
+      <input type="submit" value="SEND" align="center">
+    </form>
+  </div>
 
 
-  </footer>
 
 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "top") {
+        x.className += " responsive";
+      } else {
+        x.className = "top";
+      }
+    }
+  </script>
 
 </body>
 

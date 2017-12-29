@@ -3,35 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Louis Tatschke Website </title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="css/graphicdesign.css" rel="stylesheet" type="text/css" media="screen">
-  <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-  <style type="text/css">
-    a {
-      text-decoration: none
-    }
-  </style>
 </head>
 
 <body>
 
   <div class="top" id="myTopnav">
     <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
+    <a href="about.html">CONTACT</a>
     <div class="pages" align="center">
-      <a href="artwork.html" >ARTWORK</a>
+      <a href="artwork.html">ARTWORK</a>
       <a href="graphicdesign.html" class="active">GRAPHIC DESIGN</a>
       <a href="photography.html">PHOTOGRAPHY</a>
     </div>
     <a href="javascript:void(0);" class="icon" align="center" onclick="myFunction()">&#9776;</a>
   </div>
 
+<div class="animated zoomIn">
   <h1 align="center">
       GRAPHIC DESIGN
     </h1>
+</div>
 
   <h2 align="center"> CHARAKTER </h2>
 
@@ -74,18 +70,10 @@
     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
-    <h3 align="center">PRESS ON THE PICTURE TO GO TO THE PROTOTYPE</h3>
+    <h2 align="center">PRESS ON THE PICTURE TO GO TO THE PROTOTYPE</h3>
   </div>
 
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "top") {
-        x.className += "responsive";
-      } else {
-        x.className = "top";
-      }
-    }
     var slideIndex = 1;
     showDivs(slideIndex);
 
@@ -117,6 +105,17 @@
   </div>
 
   <script>
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "top") {
+      x.className += " responsive";
+    } else {
+      x.className = "top";
+    }
+  }
+
+
     var img1 = document.getElementById('1');
     var img2 = document.getElementById('2');
     var img3 = document.getElementById('3');
@@ -216,23 +215,7 @@
 
 
 
-
-
-
-  <footer class="footer">
-
-    <div class="home" align="left">
-
-
-      <a href="index.html">HOME</a>
-
-    </div>
-
-    <div class="about" align="right">
-
-      <a href="about.html">ABOUT</a>
-
-    </div>
+  </div>
 
 
   </footer>

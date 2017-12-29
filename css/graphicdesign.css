@@ -1,34 +1,29 @@
 body {
-  background-color: rgba(20, 20, 20, 1.0);
-  font-size: 100%;
+  background-color: rgba(17, 17, 17, 1.0);
+  min-width:100%;
+  margin: 0%;
 }
 
 
 h1 {
-  margin-top: 3%;
-  font-size: 75px;
+  margin: 5%;
+  font-size: 3em;
   letter-spacing: 0.5em;
   font-family: Poiret One, Dorsa, sans-serif;
   color: rgba(220, 220, 220, 1.0);
+  background-color: rgba(0, 0, 0, 0.0);
   position: relative;
 }
 
 h2 {
   margin-top: 3%;
-  font-size: 36px;
+  font-size: 1.5em;
   letter-spacing: 0.1em;
   font-family: Poiret One, Dorsa, sans-serif;
   color: rgba(120, 120, 120, 1.0);
   position: relative;
 }
 
-h3 {
-  font-size: 32px;
-  letter-spacing: 0.1em;
-  font-family: Poiret One, Dorsa, sans-serif;
-  color: rgba(200, 200, 200, 1.0);
-  position: relative;
-}
 
 /*   Gallery  */
 
@@ -78,17 +73,15 @@ img:hover {
 /* Caption of Modal Image */
 
 #caption {
-  font-family: Poiret One, Dorsa, sans-serif;
-  font-size: 32px;
+  font-family: Poiret One, Wire One;
+  font-size: 2em;
   margin: auto;
+  margin-top: 1%;
   display: block;
   width: 80%;
   max-width: 700px;
-  max-height: 600px;
   text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+  color: rgba(220, 220, 220, 1);
 }
 
 /* Add Animation */
@@ -118,26 +111,36 @@ img:hover {
   }
 }
 
+/*Zoom In*/
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+}
+
 .close {
   position: absolute;
   top: 0px;
   right: 0px;
-  font-size: 70em;
+  font-size: 90em;
   color: rgba(0, 0, 0, 0.0);
 }
 
 .close:hover {
   cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
 }
 
 .minigallery {
@@ -147,27 +150,24 @@ img:hover {
 .top {
   overflow: hidden;
   background: rgba(20, 20, 20, 0.0);
-  align-items: center;
+  position: relative;
 }
 
 .top a {
   float: left;
-  display: block;
   color: rgba(220, 220, 220, 1.0);
   font-family: Poiret One, Dorsa, sans-serif;
-  text-align: center;
   padding: 16px 18px;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .top a:hover {
-  filter: blur(1.5px);
+  filter: blur(2px);
 }
 
 .pages a {
-  font-size: 1.3em;
-  filter: brightness(30%);
+  color: rgba(120 , 120, 120, 1.0);
 }
 
 .active {
@@ -177,10 +177,11 @@ img:hover {
 .top .icon {
   display: none;
   margin-right: 2%;
-  font-size: 4.3em;
+  font-size: 3em;
 }
 
-@media screen and (max-width: 900px) {
+
+@media only screen and (max-width: 900px) {
   .top a {
     display: none;
   }
@@ -188,14 +189,12 @@ img:hover {
     float: right;
     display: block;
   }
-}
-
-@media screen and (max-width: 900px) {
   .top.responsive {
     position: relative;
   }
+
   .top.responsive .icon {
-    font-size: 4em;
+    font-size: 3em;
     z-index: 1;
     position: absolute;
     right: 0;
@@ -207,5 +206,21 @@ img:hover {
     display: block;
     text-align: center;
     font-size: 2em;
+    background-color: rgba(20, 20, 20, 1.0);
+  }
+  h1{
+    font-size: 2em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  img{
+    width:70%;
+    height: 70%;
+  }
+  body{
+    width: 100%;
   }
 }

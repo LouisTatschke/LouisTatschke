@@ -1,11 +1,13 @@
 body {
-  background-color: rgba(20, 20, 20, 1.0);
+  background-color: rgba(17, 17, 17, 1.0);
   transition: 1s;
   min-width:100%;
+  margin: 0%;
 }
 
 h1 {
-  font-size: 5em;
+  margin: 5%;
+  font-size: 3em;
   letter-spacing: 0.5em;
   font-family: Poiret One, Dorsa, sans-serif;
   color: rgba(220, 220, 220, 1.0);
@@ -14,7 +16,7 @@ h1 {
 
 h2 {
   margin-top: 3%;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 0.1em;
   font-family: Poiret One, Wire One, sans-serif;
   color: rgba(120, 120, 120, 1.0);
@@ -56,16 +58,17 @@ img:hover {
 .modal-content {
   margin: auto;
   display: block;
-  max-height: 80%;
-  max-width: 95%;
+  max-height: 90%;
+  max-width: 90%;
 }
 
 /* Caption of Modal Image */
 
 #caption {
   font-family: Poiret One, Wire One;
-  font-size: 3.5em;
+  font-size: 2em;
   margin: auto;
+  margin-top: 1%;
   display: block;
   width: 80%;
   max-width: 700px;
@@ -174,21 +177,22 @@ button {
   }
 }
   }
-/*fadeInDown*/
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -2000px, 0);
-  }
 
-  to {
-    opacity: 1;
-    transform: none;
+  /*fadeInDown*/
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -200px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
-}
-.fadeInDown {
-  animation-name: fadeInDown;
-}
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
 
 .zoomIn {
   animation-name: zoomIn;
@@ -197,18 +201,16 @@ button {
 .top {
   overflow: hidden;
   background: rgba(20, 20, 20, 0.0);
-  align-items: center;
+  position: relative;
 }
 
 .top a {
   float: left;
-  display: block;
   color: rgba(220, 220, 220, 1.0);
   font-family: Poiret One, Dorsa, sans-serif;
-  text-align: center;
   padding: 16px 18px;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .top a:hover {
@@ -216,7 +218,6 @@ button {
 }
 
 .pages a {
-  font-size: 1.3em;
   color: rgba(120 , 120, 120, 1.0);
 }
 
@@ -241,6 +242,7 @@ button {
   }
   .top.responsive {
     position: relative;
+
   }
   .top.responsive .icon {
     font-size: 3em;
@@ -254,11 +256,13 @@ button {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 2em;
-    background-color: rgba(80, 80, 80, 1.0);
+    font-size: 1.8em;
+    background-color: rgba(20, 20, 20, 1.0);
+
   }
   h1{
     font-size: 2em;
+    margin-top: 25%;
   }
   h2{
     font-size: 1em;
@@ -268,5 +272,12 @@ button {
   }
   body{
     width: 100%;
+  }
+  .mg{
+    max-width: 70%;
+  }
+  button{
+    height: 20%;
+    margin-bottom: -800px;
   }
 }
