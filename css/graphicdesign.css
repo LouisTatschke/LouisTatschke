@@ -83,14 +83,17 @@ img:hover {
 }
 
 /* Add Animation */
-
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 .modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-
+/*Zoon*/
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(0)
@@ -99,7 +102,6 @@ img:hover {
     -webkit-transform: scale(1)
   }
 }
-
 @keyframes zoom {
   from {
     transform: scale(0.1)
@@ -110,12 +112,6 @@ img:hover {
 }
 
 /*Zoom In*/
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
 @keyframes zoomIn {
   from {
     opacity: 0;
@@ -125,10 +121,25 @@ img:hover {
     opacity: 1;
   }
 }
-
 .zoomIn {
   animation-name: zoomIn;
 }
+/*fadeInDown*/
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+
 
 .close {
   position: absolute;
@@ -196,14 +207,26 @@ img:hover {
     position: absolute;
     right: 0;
     top: 0;
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0s;
+    animation-name: fadeInDown;
+    animation-duration: 0s;
   }
   .top.responsive a {
+    padding: 5%;
     float: none;
     position: relative;
     display: block;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     background-color: rgba(20, 20, 20, 1.0);
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fadeInDown;
+    animation-duration: 0.3s;
+  }
+  .top a:hover {
+    filter: blur(0px);
   }
   h1 {
     font-size: 2em;

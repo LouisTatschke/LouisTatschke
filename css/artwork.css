@@ -246,14 +246,23 @@ button {
     position: absolute;
     right: 0;
     top: 0;
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0s;
+    animation-name: fadeInDown;
+    animation-duration: 0s;
   }
   .top.responsive a {
+    padding: 5%;
     float: none;
     position: relative;
     display: block;
     text-align: center;
     font-size: 1.8em;
     background-color: rgba(20, 20, 20, 1.0);
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fadeInDown;
+    animation-duration: 0.3s;
   }
   h1 {
     font-size: 2em;

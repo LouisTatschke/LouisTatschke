@@ -153,6 +153,21 @@ img:hover {
   animation-name: zoomIn;
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
 
 .top {
   overflow: hidden;
@@ -198,6 +213,7 @@ img:hover {
   }
   .top.responsive {
     position: relative;
+    padding-top: 17%;
   }
 
   .top.responsive .icon {
@@ -206,17 +222,30 @@ img:hover {
     position: absolute;
     right: 0;
     top: 0;
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0s;
+    animation-name: fadeInDown;
+    animation-duration: 0s;
   }
   .top.responsive a {
+    padding: 5%;
     float: none;
     position: relative;
     display: block;
     text-align: center;
     font-size: 1.8em;
     background-color: rgba(20, 20, 20, 1.0);
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fadeInDown;
+    animation-duration: 0.3s;
+  }
+
+  .top a:hover {
+    filter: blur(0px);
   }
   h1{
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 13%;
   }
   h2{

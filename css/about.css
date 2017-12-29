@@ -114,6 +114,26 @@ input[type=submit]:hover {
   margin-right: 2%;
   font-size: 3em;
 }
+/*animation*/
+.animated {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
 
 @media only screen and (max-width: 900px) {
   .top a {
@@ -132,14 +152,26 @@ input[type=submit]:hover {
     position: absolute;
     right: 0;
     top: 0;
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0s;
+    animation-name: fadeInDown;
+    animation-duration: 0s;
   }
   .top.responsive a {
+    padding: 5%;
     float: none;
     position: relative;
     display: block;
     text-align: center;
     font-size: 1.8em;
     background-color: rgba(20, 20, 20, 1.0);
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: 0.3s;
+    animation-name: fadeInDown;
+    animation-duration: 0.3s;
+  }
+  .top a:hover {
+    filter: blur(0px);
   }
   h2 {
     font-size: 2em;
