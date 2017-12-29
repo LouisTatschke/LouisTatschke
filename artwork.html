@@ -61,9 +61,9 @@
 
   <h2 align="center"> SKETCHBOOK </h2>
   <div class="sketchbook" align="center">
-    <button class="button-left" align="left" onclick="plusDivs(-1), myFunction()"><</button>
-    <button class="button-right" align="right" onclick="plusDivs(1), myFunction()">></button>
-
+    <button class="button-left" align="left" onclick="plusDivs(-1), background()"><</button>
+    <button class="button-right" align="right" onclick="plusDivs(1), background()">></button>
+  <button class="button-image" align="right" onclick="plusDivs(1), background()">
     <img class="mg" src="images/artwork/sketchbook1.jpg" align="center">
     <img class="mg" src="images/artwork/sketchbook2.jpg" align="center">
     <img class="mg" src="images/artwork/sketchbook3.jpg" align="center">
@@ -74,7 +74,7 @@
     <img class="mg" src="images/artwork/sketchbook8.jpg" align="center">
     <img class="mg" src="images/artwork/monistitch.jpg" align="center">
 
-
+</button>
   </div>
 
 
@@ -110,21 +110,21 @@
     }
 
     //light-fade
-    var yPos, footer, home, about;
-
+    function background() {
+      document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
+    }
+    var yPos ;
     function yScroll() {
       yPos = window.pageYOffset;
-      if (yPos > 7000) {
+      if (yPos > 9000) {
         document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
       } else {
         document.body.style.backgroundColor = "rgba(20, 20, 20, 1.0)";
       }
     }
     window.addEventListener("scroll", yScroll);
-    function myFunction() {
 
-      document.body.style.backgroundColor = "rgba(220, 220, 220, 1.0)";
-    }
+
 
     var img1 = document.getElementById('1');
     var img2 = document.getElementById('2');

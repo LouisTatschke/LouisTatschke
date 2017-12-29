@@ -15,7 +15,7 @@ body{
     width: 100%;
     position: fixed;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.6em;
     letter-spacing: 1.2em;
     color: rgba(20, 20, 20, 1);
     transition: 0.5s;
@@ -24,7 +24,7 @@ body{
 
   h2{
     font-family: Poiret One, Forum, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: rgba(160, 160, 160, 1);
     letter-spacing: 0.3em;
   }
@@ -67,7 +67,6 @@ body{
 
 
 .container {
-  margin-top: 100px;
   margin: auto;
   position: relative;
   display: block;
@@ -84,7 +83,8 @@ body{
   filter:grayscale(20%) blur(0px);
   transition:  1s ease-in-out;
   -moz-transition: 1s ease-in-out;
-  -webkit-transition:  1s ease-in-out
+  -webkit-transition:  1s ease-in-out;
+  border-radius: 2%;
 }
 
 .container:hover .image {
@@ -96,7 +96,7 @@ body{
 
 .text {
   color: rgba(220, 220, 220, 1.0);
-  font-size: 5.5em;
+  font-size: 4.5em;
   letter-spacing: 0.1em;
   font-family: Poiret One, Dorsa, Wire One, sans-serif;
   position: absolute;
@@ -115,7 +115,7 @@ a {
 
   .contact{
       padding: 10px;
-      width: 32%;
+      width: 40%;
       background-color: rgba(220, 220, 220, 0.0);
       border: 2px solid rgba(220, 220, 220, 1.0);
       border-radius: 6px;
@@ -216,10 +216,16 @@ a {
       font-size: 1em;
     }
     .text{
-      font-size: 3em;
+      font-size: 2em;
     }
-    img{
+    .image{
       max-width:80%;
+    }
+    .space{
+      height: 400px;
+    }
+    .container{
+      margin-top: 0px;
     }
     body{
       width: 100%;
@@ -228,7 +234,7 @@ a {
       font-size: 1em;
     }
     .space{
-      height: 350px;
+      height: 300px;
     }
     .contact{
       display: block;
