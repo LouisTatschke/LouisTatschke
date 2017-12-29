@@ -29,7 +29,7 @@ img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
-  margin: 3%;
+  margin: 2%;
   opacity: 1.0;
 }
 
@@ -49,7 +49,6 @@ img:hover {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.0);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -89,7 +88,8 @@ img:hover {
   position: absolute;
   top: 0px;
   right: 0px;
-  font-size: 90em;
+  width:100%;
+  height: 100%;
   color: rgba(0, 0, 0, 0.0);
 }
 
@@ -128,7 +128,7 @@ button {
   background-color: rgba(0, 0, 0, 0.0);
   width: 49%;
   height: 1000px;
-  font-size: 30em;
+  font-size: 12em;
   font-family: Dorsa;
   color: rgba(120, 120, 120, 0.4);
   cursor: pointer;
@@ -272,17 +272,34 @@ button {
     font-size: 1em;
   }
   img {
-    width: 70%;
-    height: 70%;
+    max-width: 85%;
+    height:auto;
+    margin-bottom: 3%;
   }
-  body {
-    width: 100%;
+  img:hover {
+    opacity: 1.0;
   }
   .mg {
     max-width: 70%;
   }
+
   button {
     height: 20%;
     margin-bottom: -800px;
+    font-size: 5em;
+  }
+  .modal-content{
+    display: none;
+  }
+  #caption{
+    display: none;
+  }
+  .modal{
+    display: none;
+    width: 0%;
+    height: 0%;
+  }
+  .close{
+    display: none;
   }
 }
