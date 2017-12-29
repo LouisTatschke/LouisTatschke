@@ -1,7 +1,7 @@
 body {
   background-color: rgba(17, 17, 17, 1.0);
   transition: 1s;
-  min-width:100%;
+  min-width: 100%;
   margin: 0%;
 }
 
@@ -97,8 +97,6 @@ img:hover {
   cursor: pointer;
 }
 
-
-
 /*mini gallery*/
 
 .sketchbook {
@@ -176,23 +174,23 @@ button {
     transform: scale(1)
   }
 }
-  }
 
-  /*fadeInDown*/
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translate3d(0, -200px, 0);
-    }
+/*fadeInDown*/
 
-    to {
-      opacity: 1;
-      transform: none;
-    }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -200px, 0);
   }
-  .fadeInDown {
-    animation-name: fadeInDown;
+  to {
+    opacity: 1;
+    transform: none;
   }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
 
 .zoomIn {
   animation-name: zoomIn;
@@ -218,7 +216,7 @@ button {
 }
 
 .pages a {
-  color: rgba(120 , 120, 120, 1.0);
+  color: rgba(120, 120, 120, 1.0);
 }
 
 .active {
@@ -231,7 +229,6 @@ button {
   font-size: 3em;
 }
 
-
 @media only screen and (max-width: 900px) {
   .top a {
     display: none;
@@ -242,7 +239,6 @@ button {
   }
   .top.responsive {
     position: relative;
-
   }
   .top.responsive .icon {
     font-size: 3em;
@@ -258,25 +254,25 @@ button {
     text-align: center;
     font-size: 1.8em;
     background-color: rgba(20, 20, 20, 1.0);
-
   }
-  h1{
+  h1 {
     font-size: 2em;
     margin-top: 25%;
   }
-  h2{
+  h2 {
     font-size: 1em;
   }
-  img{
-    max-width:80%;
+  img {
+    width: 70%;
+    height: 70%;
   }
-  body{
+  body {
     width: 100%;
   }
-  .mg{
+  .mg {
     max-width: 70%;
   }
-  button{
+  button {
     height: 20%;
     margin-bottom: -800px;
   }

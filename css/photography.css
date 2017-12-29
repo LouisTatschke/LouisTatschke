@@ -55,8 +55,8 @@ img:hover {
   .modal-content {
     margin: auto;
     display: block;
-    height: 80%;
-    max-height: 900px;
+    max-height: 90%;
+    max-width: 90%;
   }
 
   /* Caption of Modal Image */
@@ -222,7 +222,8 @@ img:hover {
     font-size: 1em;
   }
   img{
-    max-width:80%;
+    width:70%;
+    height: 70%;
   }
   body{
     width: 100%;

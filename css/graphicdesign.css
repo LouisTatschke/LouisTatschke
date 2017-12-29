@@ -1,9 +1,8 @@
 body {
   background-color: rgba(17, 17, 17, 1.0);
-  min-width:100%;
+  min-width: 100%;
   margin: 0%;
 }
-
 
 h1 {
   margin: 5%;
@@ -23,7 +22,6 @@ h2 {
   color: rgba(120, 120, 120, 1.0);
   position: relative;
 }
-
 
 /*   Gallery  */
 
@@ -127,6 +125,7 @@ img:hover {
     opacity: 1;
   }
 }
+
 .zoomIn {
   animation-name: zoomIn;
 }
@@ -167,7 +166,7 @@ img:hover {
 }
 
 .pages a {
-  color: rgba(120 , 120, 120, 1.0);
+  color: rgba(120, 120, 120, 1.0);
 }
 
 .active {
@@ -180,7 +179,6 @@ img:hover {
   font-size: 3em;
 }
 
-
 @media only screen and (max-width: 900px) {
   .top a {
     display: none;
@@ -192,7 +190,6 @@ img:hover {
   .top.responsive {
     position: relative;
   }
-
   .top.responsive .icon {
     font-size: 3em;
     z-index: 1;
@@ -208,19 +205,19 @@ img:hover {
     font-size: 2em;
     background-color: rgba(20, 20, 20, 1.0);
   }
-  h1{
+  h1 {
     font-size: 2em;
     margin-top: 10%;
     margin-bottom: 10%;
   }
-  h2{
+  h2 {
     font-size: 1.5em;
   }
-  img{
-    width:70%;
+  img {
+    width: 70%;
     height: 70%;
   }
-  body{
+  body {
     width: 100%;
   }
 }
