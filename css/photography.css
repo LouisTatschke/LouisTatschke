@@ -202,6 +202,29 @@ img:hover {
   font-size: 3em;
 }
 
+footer{
+  height: 35px;
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+.instagram{
+  filter: invert(100%);
+  position: absolute;
+  right: 64px;
+}
+.facebook{
+  filter: invert(100%);
+  position: absolute;
+  right: 17px;
+}
+.instagram:hover{
+  filter: blur(2px);
+}
+.facebook:hover{
+  filter: blur(2px);
+}
+
 
 @media only screen and (max-width: 900px) {
   .top a {
@@ -234,7 +257,7 @@ img:hover {
     display: block;
     text-align: center;
     font-size: 1.8em;
-    background-color: rgba(20, 20, 20, 1.0);
+    background-color: rgba(17, 17, 17, 1.0);
     -webkit-animation-name: fadeInDown;
     -webkit-animation-duration: 0.3s;
     animation-name: fadeInDown;
@@ -274,6 +297,9 @@ img:hover {
     height: 0%;
   }
   .close{
+    display: none;
+  }
+  footer{
     display: none;
   }
 }

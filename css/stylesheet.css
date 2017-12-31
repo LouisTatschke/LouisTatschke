@@ -143,7 +143,7 @@ a {
 
   .top a {
     float: left;
-    color: rgba(20, 20, 20, 1.0);
+    color: rgba(17, 17, 17, 1.0);
     font-family: Poiret One, Dorsa, sans-serif;
     padding: 16px 18px;
     text-decoration: none;
@@ -169,6 +169,28 @@ a {
     color: rgba(120, 120, 120, 1.0);
   }
 
+  footer{
+    height:35px;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+  }
+  .instagram{
+    filter: invert(100%);
+    position: absolute;
+    right: 64px;
+  }
+  .facebook{
+    filter: invert(100%);
+    position: absolute;
+    right: 17px;
+  }
+  .instagram:hover{
+    filter: blur(2px);
+  }
+  .facebook:hover{
+    filter: blur(2px);
+  }
 
   @media only screen and (max-width: 900px) {
     .top a {
@@ -180,6 +202,7 @@ a {
     }
     .top.responsive {
       position: relative;
+      padding-top: 17%;
     }
 
     .top.responsive .icon {
@@ -238,5 +261,8 @@ a {
     }
     .contact{
       display: block;
+    }
+    footer{
+      display: none;
     }
   }

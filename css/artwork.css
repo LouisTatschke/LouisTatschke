@@ -29,7 +29,7 @@ img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
-  margin: 3%;
+  margin: 2%;
   opacity: 1.0;
 }
 
@@ -241,6 +241,30 @@ button:hover{
   font-size: 3em;
 }
 
+footer{
+  height: 35px;
+  bottom: 0;
+  position: fixed;
+  right: 0;
+}
+.instagram{
+  filter: invert(100%);
+  position: absolute;
+  right: 64px;
+}
+.facebook{
+  filter: invert(100%);
+  position: absolute;
+  right: 17px;
+}
+.instagram:hover{
+  filter: blur(2px);
+}
+.facebook:hover{
+  filter: blur(2px);
+}
+
+
 @media only screen and (max-width: 900px) {
   .top a {
     display: none;
@@ -251,6 +275,7 @@ button:hover{
   }
   .top.responsive {
     position: relative;
+    padding-top: 17%;
   }
   .top.responsive .icon {
     font-size: 3em;
@@ -270,7 +295,7 @@ button:hover{
     display: block;
     text-align: center;
     font-size: 1.8em;
-    background-color: rgba(20, 20, 20, 1.0);
+    background-color: rgba(17, 17, 17, 1.0);
     -webkit-animation-name: fadeInDown;
     -webkit-animation-duration: 0.3s;
     animation-name: fadeInDown;
@@ -319,6 +344,9 @@ button:hover{
     height: 0%;
   }
   .close{
+    display: none;
+  }
+  footer{
     display: none;
   }
 }
