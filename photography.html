@@ -48,29 +48,29 @@
     <img id="2" src="images/photography/schrecklich3.jpg" alt="" width="auto" height="400px">
     <img id="3" src="images/photography/schrecklich4.jpg" alt="" width="auto" height="400px">
 
-    <img id="5" src="images/photography/schrecklich6.jpg" alt="" width="auto" height="400px">
-    <img id="6" src="images/photography/schrecklich7.jpg" alt="" width="auto" height="400px">
+    <img id="4" src="images/photography/schrecklich6.jpg" alt="" width="auto" height="400px">
+    <img id="5" src="images/photography/schrecklich7.jpg" alt="" width="auto" height="400px">
   </div>
   <h2 align="center"> SEEK AND DESTROY </h2>
 
   <div class="images" align="center">
-    <img id="7" src="images/photography/frei1.jpg" alt="seek and destroy #1" width="auto" height="400px">
-    <img id="8" src="images/photography/frei2.jpg" alt="seek and destroy #2" width="auto" height="400px">
-    <img id="9" src="images/photography/frei4.jpg" alt="seek and destroy #3" width="auto" height="400px">
-    <img id="10" src="images/photography/frei3.jpg" alt="seek and destroy #4" width="auto" height="400px">
+    <img id="6" src="images/photography/frei1.jpg" alt="seek and destroy #1" width="auto" height="400px">
+    <img id="7" src="images/photography/frei2.jpg" alt="seek and destroy #2" width="auto" height="400px">
+    <img id="8" src="images/photography/frei4.jpg" alt="seek and destroy #3" width="auto" height="400px">
+    <img id="9" src="images/photography/frei3.jpg" alt="seek and destroy #4" width="auto" height="400px">
   </div>
   <h2 align="center"> ANALOG ON ROOFTOP </h2>
 
   <div class="images" align="center">
 
-    <img id="11" src="images/photography/analog1.jpg" alt="rooftop view" width="auto" height="400px">
-    <img id="12" src="images/photography/analog2.jpg" alt="rooftop neighbour" width="auto" height="400px">
-    <img id="13" src="images/photography/analog3.jpg" alt="rooftop boy" width="auto" height="400px">
-    <img id="14" src="images/photography/analog4.jpg" alt="berlin view" width="auto" height="400px">
-    <img id="15" src="images/photography/analog5.jpg" alt="rooftop boys" width="auto" height="400px">
-    <img id="16" src="images/photography/analog6.jpg" alt="tree talk" width="auto" height="400px">
-    <img id="17" src="images/photography/analog7.jpg" alt="sneeky" width="auto" height="400px">
-    <img id="18" src="images/photography/analog8.jpg" alt="analog photography" width="auto" height="400px">
+    <img id="10" src="images/photography/analog1.jpg" alt="rooftop view" width="auto" height="400px">
+    <img id="11" src="images/photography/analog2.jpg" alt="rooftop neighbour" width="auto" height="400px">
+    <img id="12" src="images/photography/analog3.jpg" alt="rooftop boy" width="auto" height="400px">
+    <img id="13" src="images/photography/analog4.jpg" alt="berlin view" width="auto" height="400px">
+    <img id="14" src="images/photography/analog5.jpg" alt="rooftop boys" width="auto" height="400px">
+    <img id="15" src="images/photography/analog6.jpg" alt="tree talk" width="auto" height="400px">
+    <img id="16" src="images/photography/analog7.jpg" alt="sneeky" width="auto" height="400px">
+    <img id="17" src="images/photography/analog8.jpg" alt="analog photography" width="auto" height="400px">
   </div>
 
   <div id="preview" class="modal">
@@ -101,6 +101,11 @@
     var img12 = document.getElementById('12');
     var img13 = document.getElementById('13');
     var img14 = document.getElementById('14');
+    var img15 = document.getElementById('15');
+    var img16 = document.getElementById('16');
+    var img17 = document.getElementById('17');
+    var img18 = document.getElementById('18');
+    var img19 = document.getElementById('19');
     var modal = document.getElementById('preview');
     var modalImg = document.getElementById("img01");
     var captionText = document.getElementById("caption");
@@ -176,7 +181,31 @@
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
-
+    }
+    img15.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    img16.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    img17.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    img18.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    img19.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
     }
 
     function myFunction() {
